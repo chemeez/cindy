@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('getpostnodejs:server');
+var debug = require('debug')('cindy:server');
 var http = require('http');
 
 /**
