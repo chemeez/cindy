@@ -6,10 +6,9 @@
         <script>
             $(document).ready(function(){
                 $('.each_tr').on("click", function(){
-                    var idx = $(this).siblings("td.column1").text();
-                    console.log( "@@@ td 구하기 = [" + $(this).siblings("td.column1").text() + "]");
-                    //location.href = "/boardDetail/" + idx;
-                    alert(idx);
+                    var idx = $(this).find(".column1").text();
+                    alert("/boardDetail/"+idx);
+                    location.href = "/boardDetail/" + idx;
             }   );
             });
 
