@@ -292,6 +292,10 @@
 		color: #FFF !important;
 	}
 
+	.button-style1
+	{
+  
+	}
 
 /*//////////////////////////////////////////////////////////////////
 [ Table ]*/
@@ -338,7 +342,7 @@
   }
   table thead tr {
 	height: 60px;
-	background: #36304a;
+	background: #09031b;
   }
   table tbody tr {
 	height: 50px;
