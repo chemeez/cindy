@@ -9,24 +9,17 @@
                     var idx = $(this).find(".column1").text();
                     alert("/boardDetail/"+idx);
                     location.href = "/boardDetail/" + idx;
-            }   );
+                });
             });
 
             function move(cd){
                 var url = ""; 
+                if(cd == "I") url = "/board/boardInsert";
+                else if(cd == "D") url = "/board/boardDelete";
 
-                if(cd == "I"){
-                    url = "/board/boardInsert";
-                } else if(cd == "D"){
-                    url = "/board/boardDelete";
-                }
+                location.href = url;
             }
 
-            function detail(idx){
-                location.href = "/boardDetail/" + idx;
-            }
-
-            
         </script>
 	</head>
 	<body>
@@ -105,7 +98,7 @@
 						</section>
                     </div>
                     
-                    <input type="button" id="insertBtn" name="insertBtn" value="음악등록" class="button button-style2"/>
+                    <input type="button" id="insertBtn" name="insertBtn" class="button button-style2" value="음악등록" onclick="move('I')"/>
 					
 
 				</div>
